@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model  &  Specificity</title>
+    <style>
+       
+       /*div{
+            margin: 10px;
+            padding: 10px;
+            background-color: yellow;
+            border-width: 2px;
+            border-color: turquoise;
+            border-style: dashed;
+            border:2px solid brown
+        }*/
+         .bm{
+            color: red;
+            background-color: aquamarine;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-right: 20px;
+            width: 400px;
+            border: 2px solid ;
+        }  
+
+        /* pseudo-class
+        */
+p:hover{
+    font-size: 32px;
+    background-color: blue;
+}
+a:visited{
+    background-color: brown;
+}
+button{
+    border: none;
+    padding: 10px;
+    background-color: blue;
+    font-size: 10px;
+    box-shadow:  rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+transition: all 3s ease;
+}
+button:hover{
+    background-color:red;
+    scale:1.2
+}
+p.abc
+{
+    padding: 10px;
+    text-align: center;
+    color: rebeccapurple;
+}
+li:first-child{
+    background-color: yellow;
+}
+body>ul>li:first-child{
+    background-color: blue;
+}
+p:nth-child(2){
+    background-color: yellow;
+}
+div>ul>li:first-child{
+    background-color: blueviolet;
+}
+p:nth-last-child(3){
+    background-color: brown;
+}
+p:nth-last-of-type(1){
+    background-color: bisque;
+}
+div li:nth-of-type(3){
+    background-color: blue;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="bm">Hello world</div>
+   <span class="bm">hello world</span>
+   <p>hello</p>
+   <p>bus</p>
+   <p>car</p>
+   
+   <p>taxi</p>
+   <a href="https://amazon.com">google</a>
+   <button class="btn-submit">ok</button>
+   <p class="abc">this is paragprah</p>
+   <h1 class="abc">this is heading</h1>
+   <ul>
+    <li>car</li>
+    <li>taxi</li>
+    <li>bike</li>
+    <li>bus</li>
+   </ul>
+   <div>
+    <ul>
+        <li>coffee</li>
+        <p>this is hot</p>
+        <li>tea</li>
+        <p>this is hot tea</p>
+        <li>drink</li>
+        <p>this is cold drink</p>
+        <li>snacks</li>
+        <p>this is snacks</p>
+    </ul>
+   </div>
+</body>
+</html>
